@@ -3,6 +3,8 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Skills from "./components/Skills"
 import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -18,14 +20,9 @@ function App() {
 
       <Projects />
 
-      <section
-        id="contact"
-        className="h-screen flex items-center justify-center"
-      >
-        <h1 className="text-4xl font-bold">
-          Contact Section
-        </h1>
-      </section>
+      <Contact />
+
+      <Footer />
 
     </div>
   )
