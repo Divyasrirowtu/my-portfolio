@@ -1,19 +1,27 @@
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+
 function App() {
   return (
-    <div className="min-h-screen bg-slate-900 text-white flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold mb-4 font-[Poppins]">
-          My Portfolio
-        </h1>
+    <div className="bg-slate-900 text-white">
+      <Navbar />
+      <Hero />
 
-        <p className="text-slate-300 text-lg">
-          React + Tailwind CSS Portfolio Website
-        </p>
+      <section id="about" className="h-screen flex items-center justify-center">
+        <h1 className="text-4xl font-bold">About Section</h1>
+      </section>
 
-        <button className="mt-6 px-6 py-3 bg-cyan-500 rounded-lg hover:bg-cyan-400 transition">
-          Get Started
-        </button>
-      </div>
+      <section id="skills" className="h-screen flex items-center justify-center">
+        <h1 className="text-4xl font-bold">Skills Section</h1>
+      </section>
+
+      <section id="projects" className="h-screen flex items-center justify-center">
+        <h1 className="text-4xl font-bold">Projects Section</h1>
+      </section>
+
+      <section id="contact" className="h-screen flex items-center justify-center">
+        <h1 className="text-4xl font-bold">Contact Section</h1>
+      </section>
     </div>
   )
 }
